@@ -8,4 +8,7 @@ private VisibleImage frogImage;
 		frogImage = new VisibleImage(i, new
 		Location(10,10), c);
 	}
+  public boolean overlaps(VisibleImage vehicleImage){
+      return ;
+  }
 }
