@@ -1,6 +1,6 @@
  import objectdraw.*;
   import java.awt.*;
-Public class Frog{
+public class Frog{
 private VisibleImage frogImage; 
 
 	public Frog(Image i, DrawingCanvas c)
@@ -9,6 +9,6 @@ private VisibleImage frogImage;
 		Location(10,10), c);
 	}
   public boolean overlaps(VisibleImage vehicleImage){
-      return frogImage.overlaps(VisibleImage vehicleImage);
+      return frogImage.overlaps(vehicleImage);
   }
 }
