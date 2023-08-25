@@ -9,6 +9,6 @@ private VisibleImage frogImage;
 		Location(10,10), c);
 	}
   public boolean overlaps(VisibleImage vehicleImage){
-      return ;
+      return frogImage.overlaps(VisibleImage vehicleImage);
   }
 }
