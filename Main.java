@@ -7,16 +7,16 @@ import java.awt.Color;
 public class Main extends WindowController implements KeyListener{
 
    // Constants defining the sizes of the background components.
-   private static final double HIGHWAY_LENGTH = 700;
+   private static final double HIGHWAY_LENGTH = 800;
    private static final double LANE_WIDTH = 100;
    private static final int NUM_LANES = 4;
    private static final double HIGHWAY_WIDTH = LANE_WIDTH * NUM_LANES;
    private static final double LINE_WIDTH = LANE_WIDTH / 10;
    
    // Constants defining the locations of the background components
-   private static final double HIGHWAY_LEFT = 50;
+   private static final double HIGHWAY_LEFT = 0;
    private static final double HIGHWAY_RIGHT = HIGHWAY_LEFT + HIGHWAY_LENGTH;
-   private static final double HIGHWAY_TOP = 100;
+   private static final double HIGHWAY_TOP = 00;
    private static final double HIGHWAY_BOTTOM = HIGHWAY_TOP + HIGHWAY_WIDTH;
    
    // Constants describing the lines on the highway
@@ -28,7 +28,7 @@ public class Main extends WindowController implements KeyListener{
    // instructions to create the frog and the Lane ActiveObjects.
    
    public static void main(String[] args) { 
-   new Main().startController(400,400); 
+   new Main().startController(800,400); 
 	} 
    
    public void begin()
