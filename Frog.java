@@ -1,5 +1,8 @@
  import objectdraw.*;
   import java.awt.*;
+import java.awt.event.KeyListener;
+import java.awt.event.KeyEvent;
+import java.awt.Color;
 public class Frog{
 private VisibleImage frogImage; 
 
