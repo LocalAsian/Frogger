@@ -3,22 +3,20 @@ import java.awt.*;
 import java.awt.event.KeyListener;
 import java.awt.event.KeyEvent;
 import java.awt.Color;
-
 public class Main extends WindowController implements KeyListener{
 
    // Constants defining the sizes of the background components.
    private static final double HIGHWAY_LENGTH = 800;
-   private static final double LANE_WIDTH = 100;
+   private static final double LANE_WIDTH = 65;
    private static final int NUM_LANES = 4;
    private static final double HIGHWAY_WIDTH = LANE_WIDTH * NUM_LANES;
    private static final double LINE_WIDTH = LANE_WIDTH / 10;
-   
    // Constants defining the locations of the background components
    private static final double HIGHWAY_LEFT = 0;
    private static final double HIGHWAY_RIGHT = HIGHWAY_LEFT + HIGHWAY_LENGTH;
-   private static final double HIGHWAY_TOP = 00;
+   private static final double HIGHWAY_TOP = 45;
    private static final double HIGHWAY_BOTTOM = HIGHWAY_TOP + HIGHWAY_WIDTH;
-   
+   private Frog beef;
    // Constants describing the lines on the highway
    private static final double LINE_SPACING = LINE_WIDTH / 2;
    private static final double DASH_LENGTH = LANE_WIDTH / 3;
@@ -56,7 +54,7 @@ public class Main extends WindowController implements KeyListener{
       }
       
       // ADD YOUR CODE TO CREATE THE FROG AND THE LANES
-           
+           beef =new Frog(getImage("froggy.gif"), canvas);
    }
    
    // Draws a pair of solid yellow lines to represent a no passing divider between lanes
