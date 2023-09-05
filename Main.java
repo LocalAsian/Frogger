@@ -16,7 +16,10 @@ public class Main extends WindowController implements KeyListener{
    private static final double HIGHWAY_RIGHT = HIGHWAY_LEFT + HIGHWAY_LENGTH;
    private static final double HIGHWAY_TOP = 45;
    private static final double HIGHWAY_BOTTOM = HIGHWAY_TOP + HIGHWAY_WIDTH;
+	
    private Frog beef;
+	 private Vehicle sedan;
+	
    // Constants describing the lines on the highway
    private static final double LINE_SPACING = LINE_WIDTH / 2;
    private static final double DASH_LENGTH = LANE_WIDTH / 3;
@@ -55,6 +58,7 @@ public class Main extends WindowController implements KeyListener{
       
       // ADD YOUR CODE TO CREATE THE FROG AND THE LANES
            beef =new Frog(getImage("froggy.gif"), canvas);
+		 			sedan = new Vehicle(getImage("sedan.png"), canvas);
    }
    
    // Draws a pair of solid yellow lines to represent a no passing divider between lanes
