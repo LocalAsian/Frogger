@@ -12,7 +12,16 @@ public class Vehicle extends ActiveObject{
 		this.fred = fred;
 		this.start();
 	}
+
+	public Vehicle(Image i,int x,int y,DrawingCanvas c)
+	{
+		vehicleImage = new VisibleImage(i, new Location(200,160), c);
+		
+		speed = 70.0;
+	}
+    
 	public void run(){
+    
 		double currentTime = System.currentTimeMillis();
 		pause(20.0);
 		double actualPause = currentTime-50;
@@ -25,5 +34,10 @@ public class Vehicle extends ActiveObject{
 		}
 		System.out.println("test worked");
 		//kill(); -should detect if vehicle goes over frog-
+   
+  }
+  
 	}
+
 }
+
