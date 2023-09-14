@@ -110,7 +110,9 @@ public void	keyReleased(KeyEvent e){
   
 }
 public void	keyTyped(KeyEvent e){
-     beef.hops("" + e.getKeyChar());
+  if(!beef.getLive()){
+    beef.hops("" + e.getKeyChar());
+  }
 }
          
 }

@@ -21,7 +21,6 @@ public class Vehicle extends ActiveObject{
 		while (vehicleImage.getX()>-140 && vehicleImage.getX()<1000) {
 			vehicleImage.move(Speed,0.0);
 			pause(50.0);
-			System.out.println(vehicleImage.getX());
 			//delete me later
 			fred.overlaps(vehicleImage, true);
 		}

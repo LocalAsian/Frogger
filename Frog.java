@@ -40,7 +40,6 @@ private Image I;
     }
   }
   public boolean getLive(){   
-    System.out.println(isDead);
     return isDead;
   }
 }
