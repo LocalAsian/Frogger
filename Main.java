@@ -19,6 +19,7 @@ public class Main extends WindowController implements KeyListener{
 	
    private Frog beef;
 	 private Vehicle sedan;
+  private Lily ratio;
 	
    // Constants describing the lines on the highway
    private static final double LINE_SPACING = LINE_WIDTH / 2;
@@ -57,10 +58,10 @@ public class Main extends WindowController implements KeyListener{
       }
       // ADD YOUR CODE TO CREATE THE FROG AND THE LANES
 
-
-           beef =new Frog(getImage("froggy.gif"), canvas,330,310,getImage("funnyHaha.png"));   
+          ratio= new Lily(getImage("HeHE.png"),10,0,canvas,beef);
+          beef =new Frog(getImage("froggy.gif"), canvas,330,310,getImage("funnyHaha.png"));   
 		 			sedan = new Vehicle(getImage("sedan.png"),10, 20, canvas, 70.0, beef);
-     
+          beef.Lives(canvas);
 
    }
    
@@ -101,6 +102,9 @@ public class Main extends WindowController implements KeyListener{
    // Note: Use onMousePress rather than onMouseClick to decide when to move the frog
    public void onMousePress(Location point)
    {
+     if(point.getY()>300 ){
+       beef.live();
+     }
    
    }
  public void	keyPressed(KeyEvent e){
